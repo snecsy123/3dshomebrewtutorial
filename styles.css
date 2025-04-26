@@ -1,0 +1,177 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    overflow: hidden;
+}
+
+.ds-container {
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+
+/* Top screen styling */
+.top-screen {
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    border-radius: 20px 20px 0 0;
+    border: 8px solid #333;
+    border-bottom: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-screen-content {
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 0 #000;
+    font-size: 24px;
+}
+
+.animation-area {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+/* Bottom screen styling */
+.bottom-screen {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(135deg, #4ca1af, #2c3e50);
+    border-radius: 0 0 20px 20px;
+    border: 8px solid #333;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.app-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.app-icon:hover {
+    transform: scale(1.1);
+}
+
+.app-icon img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+}
+
+.app-icon span {
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Button styling */
+.button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #c0392b;
+    user-select: none;
+}
+
+.a-button {
+    right: -70px;
+    bottom: 150px;
+}
+
+.b-button {
+    right: -30px;
+    bottom: 100px;
+}
+
+.d-pad {
+    position: absolute;
+    left: -70px;
+    bottom: 120px;
+    width: 80px;
+    height: 80px;
+}
+
+.d-up, .d-down, .d-left, .d-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.d-up {
+    top: 0;
+    left: 30px;
+    border-width: 0 20px 30px 20px;
+    border-color: transparent transparent #3498db transparent;
+}
+
+.d-down {
+    bottom: 0;
+    left: 30px;
+    border-width: 30px 20px 0 20px;
+    border-color: #3498db transparent transparent transparent;
+}
+
+.d-left {
+    top: 30px;
+    left: 0;
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #3498db transparent transparent;
+}
+
+.d-right {
+    top: 30px;
+    right: 0;
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #3498db;
+}
+
+/* Content sections */
+.content-section {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0,0,0,0.9);
+    border: 4px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+/* Add more styles for animations, transitions, etc. */

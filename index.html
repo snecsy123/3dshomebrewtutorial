@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DS Hacking Guide - The Complete Homebrew Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ds-container">
+        <!-- Top Screen (3DS top display) -->
+        <div class="top-screen">
+            <div class="top-screen-content">
+                <h1 class="title">3DS Hacking Guide</h1>
+                <div class="animation-area">
+                    <div class="3ds-animation"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Screen (3DS touch screen) -->
+        <div class="bottom-screen">
+            <div class="app-icons">
+                <!-- Main menu icons -->
+                <div class="app-icon" data-section="intro">
+                    <img src="icons/intro.png" alt="Introduction">
+                    <span>Introduction</span>
+                </div>
+                <div class="app-icon" data-section="prerequisites">
+                    <img src="icons/prereq.png" alt="Prerequisites">
+                    <span>Prerequisites</span>
+                </div>
+                <div class="app-icon" data-section="guide">
+                    <img src="icons/guide.png" alt="Step-by-Step">
+                    <span>Step-by-Step</span>
+                </div>
+                <div class="app-icon" data-section="apps">
+                    <img src="icons/apps.png" alt="Homebrew Apps">
+                    <span>Homebrew Apps</span>
+                </div>
+                <div class="app-icon" data-section="troubleshooting">
+                    <img src="icons/trouble.png" alt="Troubleshooting">
+                    <span>Troubleshooting</span>
+                </div>
+                <div class="app-icon" data-section="faq">
+                    <img src="icons/faq.png" alt="FAQ">
+                    <span>FAQ</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Physical buttons -->
+        <div class="button a-button" id="select-btn">Select</div>
+        <div class="button b-button" id="back-btn">Back</div>
+        <div class="d-pad">
+            <div class="d-up" id="up-btn"></div>
+            <div class="d-down" id="down-btn"></div>
+            <div class="d-left" id="left-btn"></div>
+            <div class="d-right" id="right-btn"></div>
+        </div>
+    </div>
+    
+    <!-- Content sections (hidden by default) -->
+    <div id="intro-content" class="content-section">
+        <h2>Welcome to 3DS Homebrew!</h2>
+        <p>This guide will walk you through the entire process of modding your Nintendo 3DS...</p>
+        <!-- More content -->
+    </div>
+    
+    <!-- Include JavaScript files -->
+    <script src="animations.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
